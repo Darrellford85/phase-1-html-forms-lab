@@ -6,11 +6,43 @@
     <title>My Awesome Company Contact Page</title>
   </head>
   <body>
-
-    <h1>Company Inc.</h1>
+<!-- Using this ref to correct errors for input https://www.w3schools.com/tags/att_input_required.asp & https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label-->
+    <h1>KeySide LockSmith, <meta name="og:locality" content="Palo Alto" /></h1>
     <h2>For all your incorporated company needs</h2>
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input
+       type="text" 
+       id="fullname" 
+       name = "fullname"
+       placeholder="Enter Name" 
+       required
+      />
+      <label for="email">Email:</label>
+      <input 
+      type="email" 
+      id=email
+      name="Enter Email" 
+      placeholder="Enter Email"
+      required
+      />
+      <label for="phone"> Your Phone:</label>
+      <input
+      type="tel"
+      id="phone"
+      name="Enter Phone Number"
+      placeholder="Enter Telephone (optional)"
+      />
+      <label for="message"> Enter your Message Here:</label>
+      <textarea id="message" name ="message" placeholder ="Enter Message">
+      </textarea>
+      <input type="checkbox" id="checkbox" />
+      <input type="submit" value="Submit" />
+
+    </form>
 
     <!-- First, create a form tag where our inputs will be nested -->
+  
 
 
       <!-- Add a label for 'fullname'-->
